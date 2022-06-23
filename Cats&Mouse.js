@@ -1,17 +1,14 @@
-function catsAndMouse(x, y, z){
-    var a = Math.abs(x-z);
-    var b = Math.abs(y-z);
-
-    if(a === b){
-        return "Mouse C"
-    }
-    else if (a < b){
+function catsAndMouse(catA, catB, mouseC){
+    var differenceCatAMouseC = Math.abs(catA-mouseC);
+    var differenceCatBMouseC = Math.abs(catB-mouseC);
+    
+    if (differenceCatAMouseC < differenceCatBMouseC){
         return "Cat A"
     }
-    else if(a > b){
+    else if(differenceCatAMouseC > differenceCatBMouseC){
         return "Cat B";
     }else{
-        return "Error";
+        return "Mouse C";
     }
 }
 
