@@ -14,12 +14,12 @@ function findMinMaxSum(arr){
         }
         sumValue += arr[i];   
     }
-console.log(sumValue)
-    // let maxSum = sumValue - min;
-    // let minSum = sumValue - max;
 
-    // console.log(maxSum);
-    // console.log(minSum);
+    let maxSum = sumValue - min;
+    let minSum = sumValue - max;
+
+    console.log(maxSum);
+    console.log(minSum);
 }
 const result = findMinMaxSum(array);
 console.log(result);
